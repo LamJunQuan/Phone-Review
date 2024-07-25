@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/css.css">
+</head>
+<body>
+    <b class="logo"><a class="logo" href="index.html">InfoSpecs</a></b>
+    <nav class="nav nav-pills justify-content-center">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <div class="dropdown">
+            <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="phonesDropdown" aria-haspopup="true" aria-expanded="false" href="#">Phones</a>
+            <div class="dropdown-menu" aria-labelledby="phonesDropdown">
+                <a class="dropdown-item" href="samsung.html">Samsung</a>
+                <a class="dropdown-item" href="apple.html">Apple</a>
+                <a class="dropdown-item" href="oppo.html">Oppo</a>
+                <a class="dropdown-item" href="huawei.html">Huawei</a>
+                <a class="dropdown-item" href="oneplus.html">Oneplus</a>
+                <a class="dropdown-item" href="xiaomi.html">Xiaomi</a>
+                <a class="dropdown-item" href="google.html">Google</a>
+            </div>
+        </div>
+        <a class="nav-item nav-link" href="about.html">About</a>
+        <a class="nav-item nav-link active" href="contact.html">Contact Us</a>
+    </nav>
+    <div class="container">
+    <div class="text">
+        Should there be any questions or clarifications arises, you can contact us at <a href="tel:97726371" class="in">97726371</a>, <a href="mailto:2005junquan@gmail.com" class="in">2005junquan@gmail.com</a> or fill up the form below.
+    </div>
+    <hr>
+    <form action="response.html" method="get" class="contact" autocomplete="off">
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label for="name">Name:</label><input type="text"  name="Name" id="name" class="form-control" placeholder="John">
+            <label for="email">Email:</label><input type="email" name="Email" id="email" aria-describedby="email" class="form-control" placeholder="John@gmail.com" multiple>
+            <small id="email">We'll never share your email</small>
+            <br>
+            <label for="phonenum">Phone Number:</label><input type="tel" name="Phone Number" id="phonenum" aria-describedby="phonenum" class="form-control" maxlength="8" placeholder="91234567" pattern="[0-9]{8}">
+            <small id="phonenum">We'll never share your phone number</small>
+        </fieldset>
+        <fieldset>
+            <legend>Enquiries</legend>
+            Problem(s) on:
+            <input type="checkbox" name="Samsung" class="prob" id="prob1"><label for="prob1">Samsung</label>
+            <input type="checkbox" name="Apple" class="prob" id="prob2"><label for="prob2">Apple</label>
+            <input type="checkbox" name="Oppo" class="prob" id="prob3"><label for="prob3">Oppo</label>
+            <input type="checkbox" name="Huawei" class="prob" id="prob4"><label for="prob4">Huawei</label>
+            <input type="checkbox" name="Oneplus" class="prob" id="prob5"><label for="prob5">Oneplus</label>
+            <br><input type="checkbox" name="Xiaomi" class="prob" id="prob6"><label for="prob6">Xiaomi</label>
+            <input type="checkbox" name="Google" class="prob" id="prob7"><label for="prob7">Google</label>
+            <input type="checkbox" name="Others" class="prob" id="prob8"><label for="prob8">Others: <input type="text" name="Others" class="prob" id="prob8"></label>
+            <br>
+            <label for="qn">Enquiry:</label><textarea name="qn" id="qn" cols="30" rows="7" class="form-control"></textarea>
+        </fieldset>
+        <input type="reset" name="reset" id="reset">
+        <input type="submit" id="submit">
+    </form>
+    </div>
+</body>
+</html>
